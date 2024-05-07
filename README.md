@@ -1,4 +1,4 @@
-# ADPll
+# All-Digital PLLL
 ### Structure
     .
     ├── src/
