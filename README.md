@@ -2,7 +2,7 @@
 ### Structure
     .
     ├── doc/
-    │   └── report.ppt                   # Final Report of this Project Written in Chinese.
+    │   └── adpll_report_ch.pdf          # Final Report of this Project Written in Chinese.
     │
     ├── src/
     │   ├── SPICE/                       # SPICE Netlist
