@@ -1,4 +1,4 @@
-# All-Digital PLLL
+# All-Digital PLL
 ### Structure
     .
     ├── doc/
