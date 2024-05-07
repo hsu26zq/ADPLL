@@ -1,4 +1,5 @@
 # All-Digital PLL
+This is the final project of the course "Advanced Digital Integrated Circuits Design" at CCU CS
 ### Structure
     .
     ├── doc/
