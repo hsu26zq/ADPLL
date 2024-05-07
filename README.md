@@ -1,6 +1,9 @@
 # All-Digital PLLL
 ### Structure
     .
+    ├── doc/
+    │   └── report.ppt
+    │
     ├── src/
     │   ├── SPICE/
     │   │   ├── DCO.sp
@@ -13,8 +16,5 @@
     │       ├── PFD.v
     │       ├── TEST.v
     │       └── TOP.v
-    │
-    ├── doc/
-    │   └── report.ppt
     │
     └── README.md
