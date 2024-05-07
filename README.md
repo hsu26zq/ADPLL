@@ -1,5 +1,6 @@
 # All-Digital PLL
 This is the final project of the course "Advanced Digital Integrated Circuits Design" at CCU CS
+
 ### Structure
     .
     ├── doc/
@@ -19,3 +20,8 @@ This is the final project of the course "Advanced Digital Integrated Circuits De
     │       └── TOP.v                    # Top module
     │
     └── README.md
+
+### Output Waveform
+![Screenshot 2024-05-08 000953](https://github.com/hsu26zq/game/assets/95536686/bac4c97c-5a88-4496-a7f9-e0c2931c96c3)
+
+
