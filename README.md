@@ -14,4 +14,7 @@
     │       ├── TEST.v
     │       └── TOP.v
     │
+    ├── doc/
+    │   └── report.ppt
+    │
     └── README.md
