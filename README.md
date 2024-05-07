@@ -21,7 +21,7 @@ This is the final project of the course "Advanced Digital Integrated Circuits De
     │
     └── README.md
 
-### Output Waveform
+### Output Waveform ( Reference Clock = 400MHz, Divisor = 7) 
 ![Screenshot 2024-05-08 000953](https://github.com/hsu26zq/game/assets/95536686/bac4c97c-5a88-4496-a7f9-e0c2931c96c3)
 
 
