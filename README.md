@@ -16,7 +16,7 @@ Completion Date: *2023-12*
     │   │   ├── DCO.sp                   # Digitally-Controlled Ocsillator
     │   │   └── PFD.sp                   # Phase Frequency Detector
     │   │
-    │   └── VERILOG/                     # Verilog RTL Code
+    │   └── Verilog/                     # Verilog RTL Code
     │       ├── CONTROLLER.v             # Controller
     │       ├── DCO.v                    # Digitally-Controlled Oscillator
     │       ├── DIV.v                    # Divider
