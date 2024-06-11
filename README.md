@@ -1,5 +1,5 @@
 # All-Digital PLL
-This Is My First HDL Project Completed in the Course 'Advanced Digital Integrated Circuits Design' at CCU CS.
+This is my first HDL project completed in the course 'Advanced Digital Integrated Circuits Design' at CCU CS.
 
 Completion Date: *2023-12*
 
