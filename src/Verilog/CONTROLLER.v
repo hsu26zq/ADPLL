@@ -40,40 +40,49 @@ reg [6:0] anchor = 7'd0;
 reg [127:0] dco_code = 128'hFFFFFFFFFFFFFFFF0000000000000000;
 
 always@(negedge phase_clk) begin
-if(!reset) begin
-if(!p_up) begin
-if (code + step > code) code <= code + step;
-flag_up = 1;
-end if(!p_down) begin
-if(code - step < code) code <= code - step;
-flag_down = 1;
-end if(flag_up && flag_down) begin
-polarity <= 1;
-flag_down <= 0;
-flag_up <= 0;
-end if(polarity) begin
-if(step != 1) step <= step / 2;
-polarity <= 0;
-end if(step == 7'd1) freq_lock <= 1;
-end else begin
-code <= 7'd64;
-step <= 7'd16;
-flag_up <= 0;
-flag_down <= 0;
-polarity <= 0;
-freq_lock <= 0;
-anchor <= 0;
-dco_code <= 128'hFFFFFFFFFFFFFFFF0000000000000000;
-
+  if(!reset) begin
+    if(!p_up) begin
+      if (code + step > code) code <= code + step;
+      flag_up = 1;
+    end
+    if(!p_down) begin
+      if(code - step < code) code <= code - step;
+      flag_down = 1;
+    end
+    if(flag_up && flag_down) begin
+      polarity <= 1;
+      flag_down <= 0;
+      flag_up <= 0;
+    end
+    if(polarity) begin
+      if(step != 1) step <= step / 2;
+      polarity <= 0;
+    end if(step == 7'd1) freq_lock <= 1;
+    end
+    else begin
+      code <= 7'd64;
+      step <= 7'd16;
+      flag_up <= 0;
+      flag_down <= 0;
+      polarity <= 0;
+      freq_lock <= 0;
+      anchor <= 0;
+      dco_code <= 128'hFFFFFFFFFFFFFFFF0000000000000000;
+    end
+  end
 end
-
-end
+  
 //filter
-always@(posedge freq_lock) anchor <= code;
+always@(posedge freq_lock) 
+  anchor <= code;
 always@(negedge phase_clk) begin
-if(!reset && freq_lock && polarity) code <= anchor;
-if(!reset && code == anchor + 4) anchor <= anchor + 1;
-else if(!reset && code == anchor - 4) anchor <= anchor - 1;
+  if(!reset && freq_lock && polarity)
+      code <= anchor;
+  if(!reset && code == anchor + 4)
+      anchor <= anchor + 1;
+  else if(!reset && code == anchor - 4)  
+    anchor <= anchor - 1;
+end
 
 //control code to dco code
 always@(code) begin
