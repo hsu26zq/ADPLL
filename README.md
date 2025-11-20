@@ -1,7 +1,4 @@
 # All-Digital PLL
-This is my first HDL project completed in the course 'Advanced Digital Integrated Circuits Design' at CCU CS.
-
-Completion Date: *2023-12*
 
 ## Architecture
 ![Screenshot 2024-05-08 012802](https://github.com/hsu26zq/ADPLL/assets/95536686/62f239fd-f0b8-4e83-b5fd-3f41d0393995)
