@@ -6,7 +6,8 @@
 ## Folder Structure
     .
     ├── doc/
-    │   └── adpll_report_ch.pdf          # Final Report of this Project Written in Chinese.
+    │   ├── doc_en.pdf
+    │   └── doc_ch.pdf
     │
     ├── src/
     │   ├── SPICE/                       # SPICE Netlist
