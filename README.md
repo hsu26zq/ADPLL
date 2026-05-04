@@ -1,4 +1,4 @@
-# All-Digital PLL
+# All-Digital Phase-Locked Loop
 
 ## Architecture
 ![Screenshot 2024-05-08 012802](https://github.com/hsu26zq/ADPLL/assets/95536686/62f239fd-f0b8-4e83-b5fd-3f41d0393995)
